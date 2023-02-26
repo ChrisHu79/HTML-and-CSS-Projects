@@ -125,10 +125,15 @@
           <div class="form-group">
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
               </div>
-              <button type="submit" class="btn btn-primary my-5">Submit</button>
+              <button type="button" class="btn btn-primary btn-info popover-dismiss" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Submit your email to receive great movie reward deals!">
+                sign up!</button>
         </form>
       </section>
       </div>
+
+        <!--/Sign up form-->
+        
+        
     
       <div class="container my-5">
         <ul class="nav nav-inline">
@@ -153,13 +158,20 @@
     
 
 
-
+    
     
       
-
+    
 
 
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script>
+      const popover = new bootstrap.Popover('.popover-dismiss', {
+  trigger: 'focus'
+})
+    </script>
+  
   </body>
 </html>
